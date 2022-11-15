@@ -18,7 +18,7 @@ table.listagem tr {
 	height: 50px;
 	}
 table.listagem td {
-	#border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
 	padding: 10px;
 	}
 table.listagem  tr:nth-child(even){
@@ -32,3 +32,28 @@ table.listagem td:nth-child(1){
 table.listagem td:nth-child(3){
 	width:90px;
 	}
+table.detalhes{
+	width: 100%;
+}
+table.detalhes td {
+	padding: 10px;
+}
+img.mini{
+	width:50px;
+	}
+img.full{
+height: 400PX;
+}
+footer{
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+}
+header{
+	font-size: 15px;
+	text-align: right;
+}
+form#busca{
+	font-size: 15px;
+	text-align: right;
+}

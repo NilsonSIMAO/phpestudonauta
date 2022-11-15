@@ -34,3 +34,7 @@ primary key(cod),
 foreign key (genero) references generos(cod),
 foreign key(produtora) references produtoras(cod)
 ) engine = InnoDB default charset=utf8;
+
+
+SELECT j.cod, j.nome, g.genero,j.descricao, j.nota, j.capa FROM jogos j
+JOIN generos g ON j.genero = g.cod JOIN produtoras p ON j.produtora=p.cod;
