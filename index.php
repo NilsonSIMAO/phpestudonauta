@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="estilos/estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 	<title>Lista de jogos</title>
 </head>
 
@@ -18,12 +19,15 @@
 	<div id="corpo">
 	<?php include_once "topo.php";?>
 	<h1>Escolha o seu jogo</h1>
+	<?php echo msg_sucesso('Arquivo aberto com sucesso');
+	 ?>
+	
 		<form method="get" id="busca" action="index.php" id="busca">
 			<!--Criaçao dos filtros
 				-> "o" é um parametro
 				-> "n,p, n1 e n2" sao identificadores para cada filtro
 			-->
-		Order:
+		Ordenar:
 			<a href="index.php?o=n&c=<?php echo $chave;?>"> Name</a>|
 			<a href="index.php?o=p&c =<?php echo $chave;?>">Produtora</a> | 
 			<a href="index.php?o=n1&c= <?php echo $chave;?>">Nota Alta</a> |

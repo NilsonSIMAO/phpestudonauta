@@ -13,4 +13,27 @@
 				return $caminho;
 			}
 		}
+		
+		function msg_sucesso($m){
+			$resp = "<div class='sucesso'><span class='material-symbols-outlined'>
+			check_circle
+			</span> $m</div>";
+
+			return $resp;
+		}
+
+		function msg_aviso($m){
+			$resp = "<div class='aviso'><span class='material-symbols-outlined'>
+			info
+			</span> $m</div>";
+
+			return $resp;
+		}
+		function msg_erro($m){
+			$resp = "<div class='erro'><span class='material-symbols-outlined'>
+			warning
+			</span>$m</div>";
+
+			return $resp;
+		}
 	?>
