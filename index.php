@@ -12,6 +12,7 @@
 <body>
 	<?php
 		require_once "includes/banco.php";
+		require_once  "includes/login.php";
 		require_once "includes/functions.php";
 		$ordem = $_GET['o'] ?? "n"; // variavel para os filtros
 		$chave = $_GET['c'] ?? "";
